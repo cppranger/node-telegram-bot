@@ -15,15 +15,16 @@ bot.on('message', async msg => {
 })
 
 const answer = async (bot, msg) => {
-    // Собирает информацию из объекта сообщения
+    // gets data from msg object
     const text = msg.text
     const chatId = msg.chat.id
     const userName = msg.from.first_name
     const userId = msg.from.id
     const isBot = msg.from.is_bot
 
-    // ищет нужную команду и отправляет функцию,
-    // давая возможность посылать несколько сообщений
+    // this simple 'router' finds router by message text,
+    // then returns function
+    // it gives opportunity to send multiple messages at once
     switch (text) {
         case '/start': {
             return async function () {
