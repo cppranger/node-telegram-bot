@@ -1,0 +1,33 @@
+{
+  "name": "telegram-bot",
+  "version": "1.0.0",
+  "description": "test bot project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cppranger/node-telegram-bot.git"
+  },
+  "keywords": [
+    "nodejs",
+    "telegram",
+    "api",
+    "bot"
+  ],
+  "author": "Anton Zabolotskij",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cppranger/node-telegram-bot/issues"
+  },
+  "homepage": "https://github.com/cppranger/node-telegram-bot#readme",
+  "dependencies": {
+    "dotenv": "^11.0.0",
+    "node-telegram-bot-api": "^0.56.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
